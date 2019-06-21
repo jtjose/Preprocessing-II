@@ -1,1 +1,69 @@
 // Navigation Styles here
+header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-bottom: 0.2rem dashed gray;
+    padding: 1rem;
+
+    h1 {
+        padding-top: 1rem;
+        padding-right: 40rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+
+        a {
+            color: gray;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+
+        a:hover {
+            color: black;
+            font-weight: bolder;
+        }
+    }
+
+    @media @mobile {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 0.1rem dashed gray;
+        padding-top: 1rem;
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 0;
+            padding-right: 0;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            padding: 0rem;
+
+            a {
+                font-size: 1.3rem;
+                color: gray;
+                text-decoration: none;
+                // font-size: 1.5rem;
+                // padding: 1rem;
+            }
+
+            a:hover {
+                color: black;
+                font-weight: bolder;
+            }
+        }
+    }
+}
